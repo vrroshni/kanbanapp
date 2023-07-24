@@ -1,5 +1,5 @@
 import { taskstore } from '../store/taskstore';
-import Groupedtasks from './groupedtasks';
+import Groupedtasks from './Groupedtasks';
 
 function FilterTodo() {
    const settaskstate=taskstore(store=>store.settaskstate)
