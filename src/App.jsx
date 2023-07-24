@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'
 import TodoPage from './pages/TodoPage';
+import  { Toaster } from 'react-hot-toast';
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
           <Route exact path='/' element={<TodoPage />} />
         </Routes>
       </Router>
-
+      <Toaster />
     </>
   )
 }

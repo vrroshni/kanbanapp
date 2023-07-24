@@ -1,27 +1,33 @@
-import  { useState } from 'react'
+import { taskstore } from '../store/taskstore';
 import Groupedtasks from './groupedtasks';
 
 function FilterTodo() {
-    const [filter, setFilter] = useState('PLANNED');
+   const settaskstate=taskstore(store=>store.settaskstate)
+   const taskstate=taskstore(store=>store.taskstate)
   return (
     <>
     <div className='text-center space-x-4 my-3'>
-            <button className={filter === 'PLANNED' 
+            <button className={taskstate === 'PLANNED' 
                   ? 'btn btn-outline btn-primary btn-active rounded-l-full'
                   :  'btn btn-outline btn-primary rounded-l-full'} 
-            onClick={() => setFilter('PLANNED')}>PLANNED</button>
+            onClick={() => settaskstate('PLANNED')}>PLANNED</button>
 
-            <button className={filter === 'active' 
+            <button className={taskstate === 'ONGOING' 
                   ? 'btn btn-outline btn-accent btn-active rounded-none'
                   :  'btn btn-outline btn-accent rounded-none'}  
-            onClick={() => setFilter('ONGOING')}>ONGOING</button>
+            onClick={() => settaskstate('ONGOING')}>ONGOING</button>
             
-            <button className={filter === 'DONE' 
+            <button className={taskstate === 'COMPLETED' 
                   ? 'btn btn-outline btn-secondary btn-active rounded-r-full'
                   :  'btn btn-outline btn-secondary rounded-r-full'}  
-            onClick={() => setFilter('DONE')}>DONE</button>
+            onClick={() => settaskstate('COMPLETED')}>COMPLETED</button>
         </div>
-        <Groupedtasks state={filter}/>
+        <div className='flex flex-col lg:flex-row space-x-4 my-3 items-center justify-center '>
+        <Groupedtasks state={'PLANNED'}/>
+        <Groupedtasks state={'ONGOING'}/>
+        <Groupedtasks state={'COMPLETED'}/>
+
+        </div>
 </>
   )
 }

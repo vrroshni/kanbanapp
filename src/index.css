@@ -17,11 +17,11 @@ code {
 }
 
 .PLANNED{
- color:blue 
+ color:blue ;
 }
 .ONGOING{
-  color:yellow 
+  color:yellow ;
 }
-.DONE{
+.COMPLETED{
 color: green;
 }
