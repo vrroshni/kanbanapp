@@ -9,7 +9,7 @@ function FilterTodo() {
     <div className='text-center sm:space-x-4 mt-3'>
             <button className={taskstate === 'PLANNED' 
                   ? 'btn mb-2  btn-outline btn-primary btn-active rounded-3xl sm:rounded-l-full sm:w-auto w-full'
-                  :  'btn mb-2 btn-outline btn-primary rounded-3xl md:rounded-l-full sm:w-auto w-full'} 
+                  :  'btn mb-2 btn-outline btn-primary rounded-3xl sm:rounded-l-full sm:w-auto w-full'} 
             onClick={() => settaskstate('PLANNED')}>PLANNED</button>
 
             <button className={taskstate === 'ONGOING' 

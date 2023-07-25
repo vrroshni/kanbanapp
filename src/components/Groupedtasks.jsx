@@ -41,7 +41,7 @@ const Groupedtasks = ({ state }) => {
   return (
     <>
       <hr className='mt-5' />
-      <ul className={classNames('p-1 space-y-2 min-h-[450px] min-w-[31%] bg-zinc-900 rounded-lg', { "border-dashed border-2 border-x-white": taskstate === state })}
+      <ul className={classNames('p-1 space-y-2 min-h-[450px] min-w-[31%] w-full bg-zinc-900 rounded-lg', { "border-dashed border-2 border-x-white": taskstate === state })}
         onDragOver={e => {
           settaskstate(state)
           e.preventDefault()
