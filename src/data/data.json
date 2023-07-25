@@ -1,0 +1,66 @@
+{
+    "projects": [
+        {
+            "title": "Resource 1",
+            "link": "https://example.com/resource-1",
+            "imageUrl": "https://tecdn.b-cdn.net/img/new/fluid/city/113.webp"
+        },
+        {
+            "title": "Resource 2",
+            "link": "https://example.com/resource-2",
+            "imageUrl": "https://tecdn.b-cdn.net/img/new/fluid/city/113.webp"
+        },
+        {
+            "title": "Resource 3",
+            "link": "https://example.com/resource-3",
+            "imageUrl": "https://tecdn.b-cdn.net/img/new/fluid/city/113.webp"
+        },
+        {
+            "title": "Resource 4",
+            "link": "https://example.com/resource-4",
+            "imageUrl": "https://tecdn.b-cdn.net/img/new/fluid/city/113.webp"
+        },
+        {
+            "title": "Resource 5",
+            "link": "https://example.com/resource-5",
+            "imageUrl": "https://tecdn.b-cdn.net/img/new/fluid/city/113.webp"
+        },
+        {
+            "title": "Resource 5",
+            "link": "https://example.com/resource-5",
+            "imageUrl": "https://tecdn.b-cdn.net/img/new/fluid/city/113.webp"
+        }
+    ],
+    "socialMediaLinks": [
+        {
+            "title": "Facebook",
+            "link": "https://example.com/facebook",
+            "icon": "FaFacebook"
+        },
+        {
+            "title": "Twitter",
+            "link": "https://example.com/twitter",
+            "icon": "FaTwitter"
+        },
+        {
+            "title": "Instagram",
+            "link": "https://example.com/instagram",
+            "icon": "FaInstagram"
+        },
+        {
+            "title": "LinkedIn",
+            "link": "https://example.com/linkedin",
+            "icon": "FaLinkedin"
+        },
+        {
+            "title": "YouTube",
+            "link": "https://example.com/youtube",
+            "icon": "FaYoutube"
+        },
+        {
+            "title": "Pinterest",
+            "link": "https://example.com/pinterest",
+            "icon": "FaPinterest"
+        }
+    ]
+}
